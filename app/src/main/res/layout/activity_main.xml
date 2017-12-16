@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White1"
+    android:orientation="vertical"
+    tools:context="com.example.algoritm.lab_3.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/Main_LinerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+           <ImageView
+                android:id="@+id/imagePizza"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:contentDescription="@string/imageName"
+                android:src="@drawable/pizza"
+                />
+
+            <TextView
+            android:id="@+id/MainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/title"
+            android:textColor="@color/Orange"
+            android:textSize="22sp"/>
+
+
+            <TextView
+                android:id="@+id/TitleSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/PizzaSize_info"
+                android:textSize="20sp"/>
+
+            <RadioGroup
+                android:id="@+id/RadioGroupSizePizza"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/SPizza"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/pizzaSizeSmall"
+                    />
+
+                <RadioButton
+                    android:id="@+id/MPizza"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/pizzaSizeMedium"/>
+
+                <RadioButton
+                    android:id="@+id/LPizza"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/pizzaSizeLarge"/>
+            </RadioGroup>
+
+
+
+            <TextView
+                android:id="@+id/Title_PizzaType_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/PizzaType_info"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:entries="@array/pizzaComposition"/>
+
+
+            <GridLayout
+                android:id="@+id/PizzaDop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnCount="3"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/TitleDop1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/PizzaDop_info"
+                    android:textSize="20sp"
+                    android:layout_columnSpan="3"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                   />
+
+                <CheckBox
+                    android:id="@+id/cheese"
+                    android:text="@string/cheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:onClick="cheese_click"
+                    />
+
+                <CheckBox
+                    android:id="@+id/chicken"
+                    android:text="@string/chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:onClick="chicken_click"
+                    />
+
+                <CheckBox
+                    android:id="@+id/garlic"
+                    android:text="@string/garlic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="garlic_click"
+                    />
+
+                <CheckBox
+                    android:id="@+id/mushrooms"
+                    android:text="@string/mushrooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:onClick="mushrooms_click"
+                   />
+
+                <CheckBox
+                    android:id="@+id/sausage"
+                    android:text="@string/sausage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:onClick="sausage_click"
+               />
+
+                <CheckBox
+                    android:id="@+id/vegetables"
+                    android:text="@string/vegetables"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="vegetables_click"
+                  />
+            </GridLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/cost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/priceOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Price"
+                    android:textSize="20sp"
+                    android:layout_marginStart="30dp"
+                    />
+
+                <TextView
+                    android:id="@+id/priceOrderNum"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/priceOrder"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/winPay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/PayInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_columnSpan="2"
+                    android:text="@string/PayInfo"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="15dp"
+                    android:entries="@array/paymentMethod"/>
+            </LinearLayout>
+
+
+            <GridLayout
+                android:id="@+id/CardPay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:columnCount="2">
+
+
+
+                <TextView
+                    android:id="@+id/numCard"
+                    android:text="@string/numCard"
+                    />
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:id="@+id/numCardText"/>
+
+                <TextView
+                    android:id="@+id/dataCard"
+                    android:text="@string/dataCard"/>
+
+                <EditText
+                    android:layout_width="55dp"
+                    android:id="@+id/dataCardText1"/>
+
+                <TextView
+                    android:id="@+id/codeCard"
+                    android:text="@string/codeCard"/>
+
+                <EditText
+                    android:layout_width="35dp"
+                    android:id="@+id/codeCardText"/>
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/person"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:columnCount="2">
+
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/namePerson"
+                    android:id="@+id/namePerson"/>
+
+                <EditText
+                    android:id="@+id/namePersonEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dp"
+                    android:layout_toEndOf="@+id/namePerson"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telephonePerson"
+                    android:id="@+id/telephonePerson"
+                    android:layout_below="@id/namePerson"/>
+                <EditText
+                    android:id="@+id/telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="150dp"
+                    android:hint="@string/telephoneHint"
+                    android:layout_toEndOf="@id/telephonePerson"/>
+
+
+            </GridLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/emailCheck"
+                    android:id="@+id/textView"
+                    />
+
+
+                <Switch
+                    android:id="@+id/emailCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_toEndOf="@+id/textView"/>
+
+                <EditText
+                    android:id="@+id/emalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:hint="@string/emailHint"/>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/startBuying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/White1"
+                android:text="@string/GoPay"
+                android:background="@color/colorAccent"
+                android:onClick="startBuying_click"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+

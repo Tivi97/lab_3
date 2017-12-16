@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Заказ вкуснейшей пиццы</string>
+    <string name="telephoneHint">+7 ___ ___ __ __</string>
+    <string name="Price">Общая стоимость заказа:   </string>
+    <string name="nameHint">Введите Ваше имя</string>
+    <string name="emailHint">Введите Ваш email</string>
+    <string name="telephonePerson">Телефон для связи</string>
+    <string name="GoPay">Оформить заказ</string>
+    <string name="namePerson">Ваше имя </string>
+    <string name="pizzaSizeSmall">Маленькая (20см)</string>
+    <string name="pizzaSizeMedium">Средняя (30см)</string>
+    <string name="pizzaSizeLarge">Большая (40см)</string>
+    <string name="title">Для заказа заполните форму ниже</string>
+    <string name="PizzaType_info">Выберите тип пиццы</string>
+    <string name="PizzaSize_info">Выберите размер</string>
+    <string name="PizzaDop_info">Добавки к начинке</string>
+    <string name="imageName">Картинка с аппетитной пиццей</string>
+    <string name="PayInfo">Выберите способ оплаты</string>
+    <string name="numCard">Номер карты: </string>
+    <string name="dataCard">Действительно до: </string>
+    <string name="codeCard">Секретный код: </string>
+    <string name="emailCheck">Выслать информацию о заказе на email</string>
+
+
+    <string name="mushrooms">Грибы</string>
+    <string name="cheese">Сыр</string>
+    <string name="chicken">Курица</string>
+    <string name="garlic">Чеснок</string>
+    <string name="sausage">Колбаса</string>
+    <string name="vegetables">Овощи</string>
+
+    <string-array name="pizzaComposition">
+        <item>С сыром и грибами</item>
+        <item>Колбасный микс</item>
+        <item>Вегетарианская</item>
+        <item>Маргарита</item>
+        <item>Четыре сыра</item>
+        <item>Сицилийская</item>
+    </string-array>
+
+    <string-array name="paymentMethod">
+        <item>Наличными</item>
+        <item>Яндекс.Деньги</item>
+        <item>Оплатить со счёта мобильного телефона</item>
+        <item>QIWI-кошелёк</item>
+        <item>Карты Visa, MasterCard/EuroCard, МИР</item>
+    </string-array>
+
+
+</resources>
