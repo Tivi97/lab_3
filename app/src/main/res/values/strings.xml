@@ -20,6 +20,7 @@
     <string name="dataCard">Действительно до: </string>
     <string name="codeCard">Секретный код: </string>
     <string name="emailCheck">Выслать информацию о заказе на email</string>
+    <string name="lastBoom">Подтвердить реквизиты оплаты</string>
 
 
     <string name="mushrooms">Грибы</string>

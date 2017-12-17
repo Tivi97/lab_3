@@ -226,7 +226,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:entries="@array/paymentMethod"/>
             </LinearLayout>
 
@@ -295,7 +295,7 @@
                     android:id="@+id/telephonePerson"
                     android:layout_below="@id/namePerson"/>
                 <EditText
-                    android:id="@+id/telephone"
+                    android:id="@+id/telephonePersonEdit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:minWidth="150dp"
@@ -310,8 +310,8 @@
             <RelativeLayout
                 android:id="@+id/message"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
 
 
                 <TextView
@@ -350,6 +350,17 @@
                 android:text="@string/GoPay"
                 android:background="@color/colorAccent"
                 android:onClick="startBuying_click"
+                />
+
+            <Button
+                android:id="@+id/lastBoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/White1"
+                android:text="@string/lastBoom"
+                android:background="@color/colorAccent"
+                android:onClick="lastBoom_click"
                 />
 
 
