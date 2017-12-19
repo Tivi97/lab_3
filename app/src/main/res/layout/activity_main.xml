@@ -262,8 +262,8 @@
                     android:text="@string/codeCard"/>
 
                 <EditText
-                    android:layout_width="35dp"
-                    android:id="@+id/codeCardText"/>
+                    android:id="@+id/codeCardText"
+                    android:layout_width="50dp"/>
 
             </GridLayout>
 
